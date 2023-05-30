@@ -3,6 +3,8 @@ package exe_times;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.swing.JOptionPane;
+
 public class PrincipalTime {
 	
 	public static void main(String[] args) {
@@ -15,13 +17,13 @@ public class PrincipalTime {
 				Util.cadastraTime(times);
 				break;
 			case 2:
-				Util.listaJogadoresTime(times);
+				JOptionPane.showMessageDialog(null, Util.listaJogadoresTime(times));
 				break;
 			case 3:
-				Util.artilheiroCampeonato(times);
+				JOptionPane.showMessageDialog(null, Util.artilheiroCampeonato(times));
 				break;
 			case 4:
-				Util.timeMaisGols(times);
+				JOptionPane.showMessageDialog(null, Util.timeMaisGols(times));
 				break;
 			}
 		}while(op!=5);

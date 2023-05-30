@@ -25,8 +25,7 @@ public class Util {
 	}
 	
 	public static String listaJogadoresTime(List<Time> times) {
-		Time t = escolheTime(times);
-		return t.listaJogadores();
+		return escolheTime(times).listaJogadores();
 	}
 	
 	public static String artilheiroCampeonato(List<Time> times) {
